@@ -14,8 +14,15 @@ duplicates = []  # Return the list of duplicates in this data structure
 
 # Replace the nested for loops below with your improvements
 
+# my solution
 def dupes(names_1, names_2):
     duplicates.append(i for i in names_1 if i in names_2)
+
+# better solution
+# names_2_set = set(names_2)
+# for name in names_1:
+#     if name in names_2_set:
+#         duplicates.append(name)
 
 # for name_1 in names_1:
 #     for name_2 in names_2:
